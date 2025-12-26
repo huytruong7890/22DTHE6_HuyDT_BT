@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Socket on Profile</title>
-    <link>https://huytruong7890.github.io/22DTHE6_HuyDT/tags/socket/</link>
+    <link>https://huytruong7890.github.io/22DTHE6_HuyDT_BT/tags/socket/</link>
     <description>Recent content in Socket on Profile</description>
     <generator>Hugo</generator>
     <language>vi-vn</language>
     <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://huytruong7890.github.io/22DTHE6_HuyDT/tags/socket/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huytruong7890.github.io/22DTHE6_HuyDT_BT/tags/socket/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tổng quan về lập trình mạng</title>
-      <link>https://huytruong7890.github.io/22DTHE6_HuyDT/posts/blog7/</link>
+      <link>https://huytruong7890.github.io/22DTHE6_HuyDT_BT/posts/blog7/</link>
       <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://huytruong7890.github.io/22DTHE6_HuyDT/posts/blog7/</guid>
+      <guid>https://huytruong7890.github.io/22DTHE6_HuyDT_BT/posts/blog7/</guid>
       <description>&lt;h2 id=&#34;lập-trình-mạng-là-gì&#34;&gt;Lập trình mạng là gì?&lt;/h2&gt;&#xA;&lt;p&gt;Lập trình mạng là việc xây dựng các ứng dụng có khả năng giao tiếp với nhau qua mạng máy tính (LAN, WAN, Internet). Đây là nền tảng của hầu hết các ứng dụng hiện đại.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tại-sao-cần-học-lập-trình-mạng&#34;&gt;Tại sao cần học lập trình mạng?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ứng dụng thực tế&lt;/strong&gt;: Hầu hết app ngày nay đều cần kết nối mạng&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hiểu cách hoạt động&lt;/strong&gt;: Biết cách website, app chat, game online hoạt động&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cơ hội việc làm&lt;/strong&gt;: Kỹ năng được nhiều công ty tìm kiếm&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Nền tảng cho IoT&lt;/strong&gt;: Thiết bị thông minh đều dùng lập trình mạng&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;các-khái-niệm-cơ-bản&#34;&gt;Các khái niệm cơ bản&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-ip-address-địa-chỉ-ip&#34;&gt;1. IP Address (Địa chỉ IP)&lt;/h3&gt;&#xA;&lt;p&gt;Địa chỉ định danh duy nhất của máy tính trên mạng.&lt;/p&gt;</description>
     </item>
   </channel>

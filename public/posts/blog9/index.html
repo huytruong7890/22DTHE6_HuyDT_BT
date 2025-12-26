@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi-vn" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Giao thức HTTP và hoạt động của Website | Profile</title>
+
+      <link rel="stylesheet" href="/22DTHE6_HuyDT_BT/css/main.min.d08b2323bab5a457ded97c6e60e437b002e9441694c120a92b8fb45bcd8f9c3c.css" integrity="sha256-0IsjI7q1pFfe2XxuYOQ3sALpRBaUwSCpK4&#43;0W82PnDw=" crossorigin="anonymous">
+
+
+        <script src="/22DTHE6_HuyDT_BT/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="container">
+  <nav class="main-nav">
+    <div class="nav-logo">
+      <a href="/">
+        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="url(#logoGrad)"/>
+          <text x="50" y="70" font-size="60" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">&lt;/&gt;</text>
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span style="margin-left: 0.5rem; font-weight: 700; font-size: 1.25rem; color: #1f2937;">Profile</span>
+      </a>
+    </div>
+    
+  <nav>
+    <ul>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/">Trang chủ</a>
+    </li>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/#about">Về tôi</a>
+    </li>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/posts/">Blog</a>
+    </li>
+    </ul>
+  </nav>
+
+  </nav>
+</div>
+
+<style>
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.main-nav li a {
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.main-nav li a:hover {
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    gap: 1rem;
+    font-size: 0.875rem;
+  }
+}
+</style>
+
+  </header>
+  <main>
+    
+  <h1>Giao thức HTTP và hoạt động của Website</h1>
+
+  
+  
+  <time datetime="2025-12-26T00:00:00&#43;00:00">December 26, 2025</time>
+
+  <h2 id="http-là-gì">HTTP là gì?</h2>
+<p>HTTP (HyperText Transfer Protocol) là giao thức truyền dữ liệu trên web, định nghĩa cách trình duyệt và web server giao tiếp với nhau. Đây là nền tảng của World Wide Web.</p>
+<h2 id="cách-website-hoạt-động">Cách Website hoạt động</h2>
+<pre tabindex="0"><code>1. Gõ địa chỉ web    →  Browser gửi HTTP Request
+2. DNS phân giải     →  Tìm IP của website
+3. Kết nối Server    →  Thông qua TCP/IP
+4. Server xử lý      →  Tìm file HTML/PHP/Java
+5. Server phản hồi   →  Gửi HTTP Response
+6. Browser render    →  Hiển thị website
+</code></pre><h2 id="cấu-trúc-http-request">Cấu trúc HTTP Request</h2>
+<h3 id="1-request-line">1. Request Line</h3>
+<pre tabindex="0"><code>GET /index.html HTTP/1.1
+</code></pre><ul>
+<li><strong>GET</strong>: HTTP Method (phương thức)</li>
+<li><strong>/index.html</strong>: URL path</li>
+<li><strong>HTTP/1.1</strong>: Phiên bản HTTP</li>
+</ul>
+<h3 id="2-headers">2. Headers</h3>
+<pre tabindex="0"><code>Host: www.example.com
+User-Agent: Mozilla/5.0
+Accept: text/html
+Cookie: session=abc123
+</code></pre><h3 id="3-body-với-post">3. Body (với POST)</h3>
+<pre tabindex="0"><code>username=huy&amp;password=123456
+</code></pre><h2 id="http-methods-phương-thức">HTTP Methods (Phương thức)</h2>
+<h3 id="get---lấy-dữ-liệu">GET - Lấy dữ liệu</h3>
+<pre tabindex="0"><code>GET /users/123 HTTP/1.1
+Host: api.example.com
+</code></pre><ul>
+<li>Lấy thông tin user có ID 123</li>
+<li>Không có body</li>
+<li>Có thể cache</li>
+</ul>
+<h3 id="post---tạo-mới">POST - Tạo mới</h3>
+<pre tabindex="0"><code>POST /users HTTP/1.1
+Host: api.example.com
+Content-Type: application/json
+
+{
+  &#34;name&#34;: &#34;Huy&#34;,
+  &#34;email&#34;: &#34;huy@example.com&#34;
+}
+</code></pre><ul>
+<li>Tạo user mới</li>
+<li>Có body chứa dữ liệu</li>
+<li>Không cache</li>
+</ul>
+<h3 id="put---cập-nhật-toàn-bộ">PUT - Cập nhật toàn bộ</h3>
+<pre tabindex="0"><code>PUT /users/123 HTTP/1.1
+
+{
+  &#34;name&#34;: &#34;Huy Updated&#34;,
+  &#34;email&#34;: &#34;newemail@example.com&#34;
+}
+</code></pre><h3 id="delete---xóa">DELETE - Xóa</h3>
+<pre tabindex="0"><code>DELETE /users/123 HTTP/1.1
+</code></pre><h3 id="patch---cập-nhật-một-phần">PATCH - Cập nhật một phần</h3>
+<pre tabindex="0"><code>PATCH /users/123 HTTP/1.1
+
+{
+  &#34;email&#34;: &#34;newemail@example.com&#34;
+}
+</code></pre><h2 id="http-status-codes">HTTP Status Codes</h2>
+<h3 id="2xx---thành-công">2xx - Thành công</h3>
+<ul>
+<li><strong>200 OK</strong>: Thành công</li>
+<li><strong>201 Created</strong>: Tạo mới thành công</li>
+<li><strong>204 No Content</strong>: Thành công nhưng không có dữ liệu</li>
+</ul>
+<h3 id="3xx---chuyển-hướng">3xx - Chuyển hướng</h3>
+<ul>
+<li><strong>301 Moved Permanently</strong>: Chuyển hướng vĩnh viễn</li>
+<li><strong>302 Found</strong>: Chuyển hướng tạm thời</li>
+<li><strong>304 Not Modified</strong>: Dùng cache</li>
+</ul>
+<h3 id="4xx---lỗi-client">4xx - Lỗi Client</h3>
+<ul>
+<li><strong>400 Bad Request</strong>: Request sai</li>
+<li><strong>401 Unauthorized</strong>: Chưa đăng nhập</li>
+<li><strong>403 Forbidden</strong>: Không có quyền</li>
+<li><strong>404 Not Found</strong>: Không tìm thấy trang</li>
+</ul>
+<h3 id="5xx---lỗi-server">5xx - Lỗi Server</h3>
+<ul>
+<li><strong>500 Internal Server Error</strong>: Lỗi server</li>
+<li><strong>502 Bad Gateway</strong>: Lỗi gateway</li>
+<li><strong>503 Service Unavailable</strong>: Server quá tải</li>
+</ul>
+<h2 id="cấu-trúc-http-response">Cấu trúc HTTP Response</h2>
+<pre tabindex="0"><code>HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 1234
+Set-Cookie: session=xyz789
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="https---http-secure">HTTPS - HTTP Secure</h2>
+<h3 id="khác-biệt-http-vs-https">Khác biệt HTTP vs HTTPS</h3>
+<table>
+  <thead>
+      <tr>
+          <th>HTTP</th>
+          <th>HTTPS</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Không mã hóa</td>
+          <td>Mã hóa SSL/TLS</td>
+      </tr>
+      <tr>
+          <td>Port 80</td>
+          <td>Port 443</td>
+      </tr>
+      <tr>
+          <td>Không an toàn</td>
+          <td>An toàn</td>
+      </tr>
+      <tr>
+          <td>http://</td>
+          <td>https://</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="tại-sao-cần-https">Tại sao cần HTTPS?</h3>
+<ul>
+<li>Bảo vệ mật khẩu, thông tin thẻ</li>
+<li>SEO tốt hơn (Google ưu tiên)</li>
+<li>Tăng độ tin cậy</li>
+<li>Bắt buộc với các tính năng hiện đại</li>
+</ul>
+<h2 id="cookies-và-sessions">Cookies và Sessions</h2>
+<h3 id="cookies">Cookies</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Server gửi
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">Set</span><span style="color:#f92672">-</span><span style="color:#a6e22e">Cookie</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">user</span><span style="color:#f92672">=</span><span style="color:#a6e22e">huy</span>; <span style="color:#a6e22e">Max</span><span style="color:#f92672">-</span><span style="color:#a6e22e">Age</span><span style="color:#f92672">=</span><span style="color:#ae81ff">3600</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Browser tự động gửi lại
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">Cookie</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">user</span><span style="color:#f92672">=</span><span style="color:#a6e22e">huy</span>
+</span></span></code></pre></div><h3 id="session">Session</h3>
+<ol>
+<li>User đăng nhập → Server tạo session</li>
+<li>Server gửi session ID qua cookie</li>
+<li>Browser gửi session ID mỗi request</li>
+<li>Server kiểm tra session để biết user</li>
+</ol>
+<h2 id="ví-dụ-thực-tế-với-javascript">Ví dụ thực tế với JavaScript</h2>
+<h3 id="fetch-api">Fetch API</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// GET request
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;https://api.example.com/users&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">response</span> =&gt; <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>())
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">data</span> =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">data</span>))
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">error</span> =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">error</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// POST request
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;https://api.example.com/users&#39;</span>, {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;POST&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;Content-Type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;application/json&#39;</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Huy&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">email</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;huy@example.com&#39;</span>
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">response</span> =&gt; <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>())
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">data</span> =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Success:&#39;</span>, <span style="color:#a6e22e">data</span>));
+</span></span></code></pre></div><h2 id="restful-api">RESTful API</h2>
+<p>Thiết kế API theo chuẩn REST:</p>
+<pre tabindex="0"><code>GET    /users          → Lấy danh sách users
+GET    /users/123      → Lấy user có ID 123
+POST   /users          → Tạo user mới
+PUT    /users/123      → Update toàn bộ user 123
+PATCH  /users/123      → Update một phần user 123
+DELETE /users/123      → Xóa user 123
+</code></pre><h2 id="tools-để-test-http">Tools để test HTTP</h2>
+<ol>
+<li><strong>Postman</strong>: Test API</li>
+<li><strong>cURL</strong>: Command line</li>
+<li><strong>Browser DevTools</strong>: F12 → Network tab</li>
+<li><strong>Insomnia</strong>: Tương tự Postman</li>
+</ol>
+<h2 id="kết-luận">Kết luận</h2>
+<p>HTTP là giao thức cốt lõi của web. Hiểu rõ HTTP sẽ giúp bạn:</p>
+<ul>
+<li>Phát triển web/mobile app tốt hơn</li>
+<li>Debug lỗi API dễ dàng</li>
+<li>Thiết kế RESTful API chuẩn</li>
+<li>Tối ưu performance</li>
+</ul>
+<p>Hãy mở Browser DevTools (F12) và xem tab Network để thấy HTTP requests/responses thực tế!</p>
+
+  
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/http/">HTTP</a></li>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/web/">Web</a></li>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/protocol/">Protocol</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2025. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

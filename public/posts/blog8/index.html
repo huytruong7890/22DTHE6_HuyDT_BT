@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi-vn" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Mô hình Client – Server | Profile</title>
+
+      <link rel="stylesheet" href="/22DTHE6_HuyDT_BT/css/main.min.d08b2323bab5a457ded97c6e60e437b002e9441694c120a92b8fb45bcd8f9c3c.css" integrity="sha256-0IsjI7q1pFfe2XxuYOQ3sALpRBaUwSCpK4&#43;0W82PnDw=" crossorigin="anonymous">
+
+
+        <script src="/22DTHE6_HuyDT_BT/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="container">
+  <nav class="main-nav">
+    <div class="nav-logo">
+      <a href="/">
+        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="url(#logoGrad)"/>
+          <text x="50" y="70" font-size="60" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">&lt;/&gt;</text>
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span style="margin-left: 0.5rem; font-weight: 700; font-size: 1.25rem; color: #1f2937;">Profile</span>
+      </a>
+    </div>
+    
+  <nav>
+    <ul>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/">Trang chủ</a>
+    </li>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/#about">Về tôi</a>
+    </li>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/posts/">Blog</a>
+    </li>
+    </ul>
+  </nav>
+
+  </nav>
+</div>
+
+<style>
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.main-nav li a {
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.main-nav li a:hover {
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    gap: 1rem;
+    font-size: 0.875rem;
+  }
+}
+</style>
+
+  </header>
+  <main>
+    
+  <h1>Mô hình Client – Server</h1>
+
+  
+  
+  <time datetime="2025-12-26T00:00:00&#43;00:00">December 26, 2025</time>
+
+  <h2 id="mô-hình-client--server-là-gì">Mô hình Client – Server là gì?</h2>
+<p>Client-Server là mô hình kiến trúc mạng trong đó:</p>
+<ul>
+<li><strong>Client (Máy khách)</strong>: Gửi yêu cầu (request)</li>
+<li><strong>Server (Máy chủ)</strong>: Xử lý yêu cầu và trả kết quả (response)</li>
+</ul>
+<p>Đây là mô hình phổ biến nhất trong phát triển ứng dụng mạng hiện nay.</p>
+<h2 id="cách-hoạt-động">Cách hoạt động</h2>
+<pre tabindex="0"><code>1. Client gửi yêu cầu    →    Server nhận yêu cầu
+2. Server xử lý          →    Truy vấn database
+3. Server gửi phản hồi   →    Client nhận kết quả
+4. Client hiển thị      →    Người dùng thấy kết quả
+</code></pre><h2 id="ví-dụ-thực-tế">Ví dụ thực tế</h2>
+<h3 id="1-website">1. Website</h3>
+<ul>
+<li><strong>Client</strong>: Trình duyệt (Chrome, Firefox)</li>
+<li><strong>Server</strong>: Web server (Apache, Nginx)</li>
+<li><strong>Luồng</strong>:
+<pre tabindex="0"><code>Browser → Gửi HTTP Request → Web Server
+Web Server → Xử lý PHP/Java → Database
+Web Server → Trả HTML/CSS/JS → Browser hiển thị
+</code></pre></li>
+</ul>
+<h3 id="2-email">2. Email</h3>
+<ul>
+<li><strong>Client</strong>: Outlook, Gmail app</li>
+<li><strong>Server</strong>: Mail server (Gmail, Yahoo)</li>
+<li><strong>Luồng</strong>: Viết email → Gửi đến mail server → Server chuyển đến người nhận</li>
+</ul>
+<h3 id="3-game-online">3. Game Online</h3>
+<ul>
+<li><strong>Client</strong>: Game client trên máy/điện thoại</li>
+<li><strong>Server</strong>: Game server</li>
+<li><strong>Luồng</strong>: Hành động của bạn → Gửi server → Server đồng bộ → Gửi cho người chơi khác</li>
+</ul>
+<h3 id="4-banking">4. Banking</h3>
+<ul>
+<li><strong>Client</strong>: App ngân hàng, ATM</li>
+<li><strong>Server</strong>: Server ngân hàng</li>
+<li><strong>Luồng</strong>: Chuyển tiền → Gửi server → Kiểm tra số dư → Thực hiện giao dịch</li>
+</ul>
+<h2 id="ưu-điểm-của-mô-hình-client-server">Ưu điểm của mô hình Client-Server</h2>
+<h3 id="1-quản-lý-tập-trung">1. Quản lý tập trung</h3>
+<ul>
+<li>Dữ liệu lưu trên server</li>
+<li>Dễ backup, bảo mật</li>
+<li>Cập nhật dễ dàng</li>
+</ul>
+<h3 id="2-khả-năng-mở-rộng">2. Khả năng mở rộng</h3>
+<ul>
+<li>Thêm client mới dễ dàng</li>
+<li>Nâng cấp server khi cần</li>
+<li>Phân tải với nhiều server</li>
+</ul>
+<h3 id="3-bảo-mật">3. Bảo mật</h3>
+<ul>
+<li>Server kiểm soát truy cập</li>
+<li>Mã hóa dữ liệu</li>
+<li>Authentication &amp; Authorization</li>
+</ul>
+<h3 id="4-chia-sẻ-tài-nguyên">4. Chia sẻ tài nguyên</h3>
+<ul>
+<li>Nhiều client dùng chung database</li>
+<li>Chia sẻ file, máy in</li>
+<li>Tiết kiệm chi phí</li>
+</ul>
+<h2 id="nhược-điểm">Nhược điểm</h2>
+<ul>
+<li><strong>Single point of failure</strong>: Server hỏng → toàn hệ thống ngừng</li>
+<li><strong>Chi phí cao</strong>: Cần server mạnh</li>
+<li><strong>Phụ thuộc mạng</strong>: Không có mạng → không dùng được</li>
+<li><strong>Tắc nghẽn</strong>: Quá nhiều client → server quá tải</li>
+</ul>
+<h2 id="ví-dụ-code-java">Ví dụ code Java</h2>
+<h3 id="server-đơn-giản">Server đơn giản</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.net.*;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.io.*;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Server</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Tạo server socket ở port 8080</span>
+</span></span><span style="display:flex;"><span>            ServerSocket serverSocket <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ServerSocket(8080);
+</span></span><span style="display:flex;"><span>            System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Server đang chạy ở port 8080...&#34;</span>);
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">true</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// Chờ client kết nối</span>
+</span></span><span style="display:flex;"><span>                Socket clientSocket <span style="color:#f92672">=</span> serverSocket.<span style="color:#a6e22e">accept</span>();
+</span></span><span style="display:flex;"><span>                System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Client kết nối: &#34;</span> <span style="color:#f92672">+</span> clientSocket.<span style="color:#a6e22e">getInetAddress</span>());
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// Đọc dữ liệu từ client</span>
+</span></span><span style="display:flex;"><span>                BufferedReader in <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BufferedReader(
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">new</span> InputStreamReader(clientSocket.<span style="color:#a6e22e">getInputStream</span>()));
+</span></span><span style="display:flex;"><span>                String message <span style="color:#f92672">=</span> in.<span style="color:#a6e22e">readLine</span>();
+</span></span><span style="display:flex;"><span>                System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Nhận: &#34;</span> <span style="color:#f92672">+</span> message);
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// Gửi phản hồi cho client</span>
+</span></span><span style="display:flex;"><span>                PrintWriter out <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PrintWriter(clientSocket.<span style="color:#a6e22e">getOutputStream</span>(), <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>                out.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Server đã nhận: &#34;</span> <span style="color:#f92672">+</span> message);
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                clientSocket.<span style="color:#a6e22e">close</span>();
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">catch</span> (IOException e) {
+</span></span><span style="display:flex;"><span>            e.<span style="color:#a6e22e">printStackTrace</span>();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="client-đơn-giản">Client đơn giản</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.net.*;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.io.*;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Client</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Kết nối đến server</span>
+</span></span><span style="display:flex;"><span>            Socket socket <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Socket(<span style="color:#e6db74">&#34;localhost&#34;</span>, 8080);
+</span></span><span style="display:flex;"><span>            System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Đã kết nối đến server!&#34;</span>);
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Gửi dữ liệu đến server</span>
+</span></span><span style="display:flex;"><span>            PrintWriter out <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PrintWriter(socket.<span style="color:#a6e22e">getOutputStream</span>(), <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>            out.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Xin chào Server!&#34;</span>);
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Nhận phản hồi từ server</span>
+</span></span><span style="display:flex;"><span>            BufferedReader in <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BufferedReader(
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">new</span> InputStreamReader(socket.<span style="color:#a6e22e">getInputStream</span>()));
+</span></span><span style="display:flex;"><span>            String response <span style="color:#f92672">=</span> in.<span style="color:#a6e22e">readLine</span>();
+</span></span><span style="display:flex;"><span>            System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Phản hồi: &#34;</span> <span style="color:#f92672">+</span> response);
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            socket.<span style="color:#a6e22e">close</span>();
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">catch</span> (IOException e) {
+</span></span><span style="display:flex;"><span>            e.<span style="color:#a6e22e">printStackTrace</span>();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="các-biến-thể-của-mô-hình">Các biến thể của mô hình</h2>
+<h3 id="1-peer-to-peer-p2p">1. Peer-to-Peer (P2P)</h3>
+<ul>
+<li>Mỗi máy vừa là client vừa là server</li>
+<li>Ví dụ: BitTorrent, Blockchain</li>
+</ul>
+<h3 id="2-three-tier-architecture">2. Three-tier Architecture</h3>
+<pre tabindex="0"><code>Client ↔ Application Server ↔ Database Server
+</code></pre><ul>
+<li>Tách biệt presentation, logic, data</li>
+</ul>
+<h3 id="3-microservices">3. Microservices</h3>
+<ul>
+<li>Nhiều server nhỏ, mỗi server làm 1 việc</li>
+<li>Dễ mở rộng, bảo trì</li>
+</ul>
+<h2 id="kết-luận">Kết luận</h2>
+<p>Mô hình Client-Server là nền tảng của hầu hết ứng dụng mạng hiện đại. Hiểu rõ mô hình này sẽ giúp bạn:</p>
+<ul>
+<li>Thiết kế hệ thống tốt hơn</li>
+<li>Debug lỗi dễ dàng</li>
+<li>Tối ưu hiệu suất</li>
+</ul>
+<p>Hãy thực hành code ví dụ trên để hiểu sâu hơn về cách Client và Server giao tiếp!</p>
+
+  
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/client/">Client</a></li>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/server/">Server</a></li>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/network/">Network</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2025. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

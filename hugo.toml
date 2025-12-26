@@ -1,4 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = "https://huytruong7890.github.io/22DTHE6_HuyDT/"
+publishDir = "docs"
+relativeURLs = true
+
 languageCode = 'vi-vn'
 title = 'Profile'
 theme = 'mytheme'

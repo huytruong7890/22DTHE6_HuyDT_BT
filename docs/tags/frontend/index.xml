@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frontend on Profile</title>
-    <link>https://huytruong7890.github.io/22DTHE6_HuyDT/tags/frontend/</link>
+    <link>/22DTHE6_HuyDT/tags/frontend/</link>
     <description>Recent content in Frontend on Profile</description>
     <generator>Hugo</generator>
     <language>vi-vn</language>
     <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://huytruong7890.github.io/22DTHE6_HuyDT/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/22DTHE6_HuyDT/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript là gì? Ứng dụng trong Web</title>
-      <link>https://huytruong7890.github.io/22DTHE6_HuyDT/posts/blog4/</link>
+      <link>/22DTHE6_HuyDT/posts/blog4/</link>
       <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://huytruong7890.github.io/22DTHE6_HuyDT/posts/blog4/</guid>
+      <guid>/22DTHE6_HuyDT/posts/blog4/</guid>
       <description>&lt;h2 id=&#34;javascript-là-gì&#34;&gt;JavaScript là gì?&lt;/h2&gt;&#xA;&lt;p&gt;JavaScript là ngôn ngữ lập trình chạy trên trình duyệt web, giúp website trở nên tương tác và sinh động. Cùng với HTML và CSS, JavaScript tạo thành bộ ba công nghệ nền tảng của phát triển web.&lt;/p&gt;&#xA;&lt;h2 id=&#34;vai-trò-của-javascript-trong-web&#34;&gt;Vai trò của JavaScript trong Web&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-xử-lý-sự-kiện&#34;&gt;1. Xử lý sự kiện&lt;/h3&gt;&#xA;&lt;p&gt;JavaScript cho phép website phản ứng với hành động của người dùng như click, scroll, nhập liệu.&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-tạo-hiệu-ứng-động&#34;&gt;2. Tạo hiệu ứng động&lt;/h3&gt;&#xA;&lt;p&gt;Animation, slider, popup, dropdown menu đều được tạo bằng JavaScript.&lt;/p&gt;</description>
     </item>
   </channel>

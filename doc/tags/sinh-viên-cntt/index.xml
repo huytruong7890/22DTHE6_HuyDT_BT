@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sinh Viên CNTT on Profile</title>
+    <link>https://huytruong7890.github.io/22DTHE6_HuyDT_BT/tags/sinh-vi%C3%AAn-cntt/</link>
+    <description>Recent content in Sinh Viên CNTT on Profile</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huytruong7890.github.io/22DTHE6_HuyDT_BT/tags/sinh-vi%C3%AAn-cntt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giới thiệu ngôn ngữ lập trình Java</title>
+      <link>https://huytruong7890.github.io/22DTHE6_HuyDT_BT/posts/blog1/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://huytruong7890.github.io/22DTHE6_HuyDT_BT/posts/blog1/</guid>
+      <description>&lt;h2 id=&#34;giới-thiệu&#34;&gt;Giới thiệu&lt;/h2&gt;&#xA;&lt;p&gt;Java là một ngôn ngữ lập trình hướng đối tượng được phát triển bởi Sun Microsystems vào năm 1995 và hiện nay thuộc quyền quản lý của Oracle. Java được sử dụng rộng rãi trong phát triển phần mềm, website và đặc biệt là ứng dụng Android.&lt;/p&gt;&#xA;&lt;p&gt;Với phương châm &lt;strong&gt;&amp;ldquo;Write Once, Run Anywhere&amp;rdquo;&lt;/strong&gt; (Viết một lần, chạy mọi nơi), Java cho phép lập trình viên viết code một lần và chạy trên nhiều nền tảng khác nhau nhờ Java Virtual Machine (JVM).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

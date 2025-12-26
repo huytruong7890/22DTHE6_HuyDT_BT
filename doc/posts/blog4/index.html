@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi-vn" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>JavaScript là gì? Ứng dụng trong Web | Profile</title>
+
+      <link rel="stylesheet" href="/22DTHE6_HuyDT_BT/css/main.min.d08b2323bab5a457ded97c6e60e437b002e9441694c120a92b8fb45bcd8f9c3c.css" integrity="sha256-0IsjI7q1pFfe2XxuYOQ3sALpRBaUwSCpK4&#43;0W82PnDw=" crossorigin="anonymous">
+
+
+        <script src="/22DTHE6_HuyDT_BT/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="container">
+  <nav class="main-nav">
+    <div class="nav-logo">
+      <a href="/">
+        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="url(#logoGrad)"/>
+          <text x="50" y="70" font-size="60" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">&lt;/&gt;</text>
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span style="margin-left: 0.5rem; font-weight: 700; font-size: 1.25rem; color: #1f2937;">Profile</span>
+      </a>
+    </div>
+    
+  <nav>
+    <ul>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/">Trang chủ</a>
+    </li>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/#about">Về tôi</a>
+    </li>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/posts/">Blog</a>
+    </li>
+    </ul>
+  </nav>
+
+  </nav>
+</div>
+
+<style>
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.main-nav li a {
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.main-nav li a:hover {
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    gap: 1rem;
+    font-size: 0.875rem;
+  }
+}
+</style>
+
+  </header>
+  <main>
+    
+  <h1>JavaScript là gì? Ứng dụng trong Web</h1>
+
+  
+  
+  <time datetime="2025-12-26T00:00:00&#43;00:00">December 26, 2025</time>
+
+  <h2 id="javascript-là-gì">JavaScript là gì?</h2>
+<p>JavaScript là ngôn ngữ lập trình chạy trên trình duyệt web, giúp website trở nên tương tác và sinh động. Cùng với HTML và CSS, JavaScript tạo thành bộ ba công nghệ nền tảng của phát triển web.</p>
+<h2 id="vai-trò-của-javascript-trong-web">Vai trò của JavaScript trong Web</h2>
+<h3 id="1-xử-lý-sự-kiện">1. Xử lý sự kiện</h3>
+<p>JavaScript cho phép website phản ứng với hành động của người dùng như click, scroll, nhập liệu.</p>
+<h3 id="2-tạo-hiệu-ứng-động">2. Tạo hiệu ứng động</h3>
+<p>Animation, slider, popup, dropdown menu đều được tạo bằng JavaScript.</p>
+<h3 id="3-kiểm-tra-dữ-liệu">3. Kiểm tra dữ liệu</h3>
+<p>Validation form, kiểm tra định dạng email, số điện thoại ngay trên trình duyệt.</p>
+<h3 id="4-giao-tiếp-với-server">4. Giao tiếp với Server</h3>
+<p>Sử dụng AJAX, Fetch API để tải dữ liệu mà không cần reload trang.</p>
+<h2 id="ví-dụ-javascript-đơn-giản">Ví dụ JavaScript đơn giản</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Hiển thị thông báo
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">chaoMung</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#39;Chào mừng đến với website!&#39;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Xử lý click button
+</span></span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;btnClick&#39;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Button đã được click!&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Thay đổi nội dung HTML
+</span></span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;demo&#39;</span>).<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Nội dung mới&#39;</span>;
+</span></span></code></pre></div><h2 id="ứng-dụng-thực-tế">Ứng dụng thực tế</h2>
+<ul>
+<li><strong>Website động</strong>: Facebook, YouTube, Gmail</li>
+<li><strong>Web Application</strong>: Google Docs, Trello</li>
+<li><strong>Game trình duyệt</strong>: HTML5 games</li>
+<li><strong>Mobile App</strong>: React Native</li>
+<li><strong>Server</strong>: Node.js</li>
+</ul>
+<h2 id="javascript-vs-java">JavaScript vs Java</h2>
+<p>Mặc dù tên gọi giống nhau nhưng JavaScript và Java là <strong>hai ngôn ngữ hoàn toàn khác nhau</strong>:</p>
+<ul>
+<li>Java: Ngôn ngữ backend, cần biên dịch</li>
+<li>JavaScript: Ngôn ngữ frontend, chạy trên trình duyệt</li>
+</ul>
+<h2 id="kết-luận">Kết luận</h2>
+<p>JavaScript là thành phần không thể thiếu trong phát triển web hiện đại. Nếu bạn muốn trở thành web developer, JavaScript là kỹ năng bắt buộc phải học.</p>
+
+  
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/javascript/">JavaScript</a></li>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/web/">Web</a></li>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/frontend/">Frontend</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2025. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

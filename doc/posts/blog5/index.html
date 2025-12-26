@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi-vn" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Biến và kiểu dữ liệu trong JavaScript | Profile</title>
+
+      <link rel="stylesheet" href="/22DTHE6_HuyDT_BT/css/main.min.d08b2323bab5a457ded97c6e60e437b002e9441694c120a92b8fb45bcd8f9c3c.css" integrity="sha256-0IsjI7q1pFfe2XxuYOQ3sALpRBaUwSCpK4&#43;0W82PnDw=" crossorigin="anonymous">
+
+
+        <script src="/22DTHE6_HuyDT_BT/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="container">
+  <nav class="main-nav">
+    <div class="nav-logo">
+      <a href="/">
+        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="url(#logoGrad)"/>
+          <text x="50" y="70" font-size="60" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">&lt;/&gt;</text>
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span style="margin-left: 0.5rem; font-weight: 700; font-size: 1.25rem; color: #1f2937;">Profile</span>
+      </a>
+    </div>
+    
+  <nav>
+    <ul>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/">Trang chủ</a>
+    </li>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/#about">Về tôi</a>
+    </li>
+    <li>
+      <a href="/22DTHE6_HuyDT_BT/posts/">Blog</a>
+    </li>
+    </ul>
+  </nav>
+
+  </nav>
+</div>
+
+<style>
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.main-nav li a {
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.main-nav li a:hover {
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    gap: 1rem;
+    font-size: 0.875rem;
+  }
+}
+</style>
+
+  </header>
+  <main>
+    
+  <h1>Biến và kiểu dữ liệu trong JavaScript</h1>
+
+  
+  
+  <time datetime="2025-12-26T00:00:00&#43;00:00">December 26, 2025</time>
+
+  <h2 id="khai-báo-biến-trong-javascript">Khai báo biến trong JavaScript</h2>
+<p>JavaScript cung cấp 3 cách khai báo biến, mỗi cách có đặc điểm riêng:</p>
+<h3 id="1-var-cách-cũ">1. var (cách cũ)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Huy&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span></code></pre></div><ul>
+<li>Phạm vi: Function scope</li>
+<li>Có thể khai báo lại</li>
+<li>Không nên dùng trong code hiện đại</li>
+</ul>
+<h3 id="2-let-khuyên-dùng">2. let (khuyên dùng)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Huy&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">21</span>; <span style="color:#75715e">// Có thể thay đổi giá trị
+</span></span></span></code></pre></div><ul>
+<li>Phạm vi: Block scope</li>
+<li>Không thể khai báo lại</li>
+<li>Giá trị có thể thay đổi</li>
+</ul>
+<h3 id="3-const-hằng-số">3. const (hằng số)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PI</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14159</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">SCHOOL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;HUTECH&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// PI = 3.14; // Lỗi! Không thể thay đổi
+</span></span></span></code></pre></div><ul>
+<li>Phạm vi: Block scope</li>
+<li>Giá trị không thể thay đổi</li>
+<li>Dùng cho các giá trị cố định</li>
+</ul>
+<h2 id="kiểu-dữ-liệu-trong-javascript">Kiểu dữ liệu trong JavaScript</h2>
+<h3 id="1-number-số">1. Number (Số)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">99.99</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">negative</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>;
+</span></span></code></pre></div><h3 id="2-string-chuỗi">2. String (Chuỗi)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Trương Đức Huy&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">school</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;HUTECH&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Xin chào </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>; <span style="color:#75715e">// Template string
+</span></span></span></code></pre></div><h3 id="3-boolean-đúngsai">3. Boolean (Đúng/Sai)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isStudent</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isPassed</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span></code></pre></div><h3 id="4-array-mảng">4. Array (Mảng)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Táo&#34;</span>, <span style="color:#e6db74">&#34;Chuối&#34;</span>, <span style="color:#e6db74">&#34;Cam&#34;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fruits</span>[<span style="color:#ae81ff">0</span>]); <span style="color:#75715e">// &#34;Táo&#34;
+</span></span></span></code></pre></div><h3 id="5-object-đối-tượng">5. Object (Đối tượng)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">student</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Trương Đức Huy&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">major</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CNTT&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">showInfo</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">student</span>.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">// &#34;Trương Đức Huy&#34;
+</span></span></span></code></pre></div><h3 id="6-null-và-undefined">6. Null và Undefined</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">empty</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;        <span style="color:#75715e">// Giá trị rỗng có chủ đích
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">notDefined</span>;          <span style="color:#75715e">// undefined - chưa gán giá trị
+</span></span></span></code></pre></div><h2 id="ví-dụ-thực-tế">Ví dụ thực tế</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Thông tin sinh viên
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">studentName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Trương Đức Huy&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">currentAge</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">subjects</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Java&#34;</span>, <span style="color:#e6db74">&#34;JavaScript&#34;</span>, <span style="color:#e6db74">&#34;Lập trình mạng&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">studentInfo</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">studentName</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">currentAge</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">school</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;HUTECH&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">courses</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">subjects</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">isActive</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">studentInfo</span>);
+</span></span></code></pre></div><h2 id="kiểm-tra-kiểu-dữ-liệu">Kiểm tra kiểu dữ liệu</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#e6db74">&#34;Hello&#34;</span>);      <span style="color:#75715e">// &#34;string&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#ae81ff">42</span>);           <span style="color:#75715e">// &#34;number&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">true</span>);         <span style="color:#75715e">// &#34;boolean&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>]);      <span style="color:#75715e">// &#34;object&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;A&#34;</span>}); <span style="color:#75715e">// &#34;object&#34;
+</span></span></span></code></pre></div><h2 id="kết-luận">Kết luận</h2>
+<p>Hiểu rõ về biến và kiểu dữ liệu là nền tảng quan trọng để học JavaScript. Hãy thực hành nhiều để nắm vững các khái niệm này!</p>
+
+  
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/javascript/">JavaScript</a></li>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/bi%E1%BA%BFn/">Biến</a></li>
+        <li><a href="/22DTHE6_HuyDT_BT/tags/c%C6%A1-b%E1%BA%A3n/">Cơ Bản</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2025. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

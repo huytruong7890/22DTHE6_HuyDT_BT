@@ -1,6 +1,6 @@
-baseURL = "/22DTHE6_HuyDT/"
+baseURL = "https://huytruong7890.github.io/22DTHE6_HuyDT/"
 publishDir = "docs"
-relativeURLs = true
+relativeURLs = false
 
 languageCode = 'vi-vn'
 title = 'Profile'

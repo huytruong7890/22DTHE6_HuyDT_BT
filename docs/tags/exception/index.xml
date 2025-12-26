@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exception on Profile</title>
-    <link>/22DTHE6_HuyDT/tags/exception/</link>
+    <link>https://huytruong7890.github.io/22DTHE6_HuyDT/tags/exception/</link>
     <description>Recent content in Exception on Profile</description>
     <generator>Hugo</generator>
     <language>vi-vn</language>
     <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/22DTHE6_HuyDT/tags/exception/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huytruong7890.github.io/22DTHE6_HuyDT/tags/exception/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xử lý ngoại lệ trong Java</title>
-      <link>/22DTHE6_HuyDT/posts/blog3/</link>
+      <link>https://huytruong7890.github.io/22DTHE6_HuyDT/posts/blog3/</link>
       <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>/22DTHE6_HuyDT/posts/blog3/</guid>
+      <guid>https://huytruong7890.github.io/22DTHE6_HuyDT/posts/blog3/</guid>
       <description>&lt;h1 id=&#34;-bài-3--xử-lý-ngoại-lệ-trong-java&#34;&gt;🟢 BÀI 3 – XỬ LÝ NGOẠI LỆ TRONG JAVA&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ngoại-lệ-là-gì&#34;&gt;Ngoại lệ là gì?&lt;/h2&gt;&#xA;&lt;p&gt;Ngoại lệ là lỗi xảy ra trong quá trình chạy chương trình.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cách-xử-lý-ngoại-lệ&#34;&gt;Cách xử lý ngoại lệ&lt;/h2&gt;&#xA;&lt;p&gt;Java sử dụng khối try – catch – finally để xử lý lỗi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ví-dụ&#34;&gt;Ví dụ&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 10 &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; 0;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;} &lt;span style=&#34;color:#66d9ef&#34;&gt;catch&lt;/span&gt; (Exception e) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Loi chia cho 0&amp;#34;&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>

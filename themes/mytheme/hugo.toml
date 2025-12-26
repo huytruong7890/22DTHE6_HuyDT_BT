@@ -1,0 +1,24 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = 'My New Hugo Site'
+
+[menus]
+  [[menus.main]]
+    name = 'Trang chủ'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Về tôi'
+    pageRef = '/posts'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Blog'
+    pageRef = '/tags'
+    weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'

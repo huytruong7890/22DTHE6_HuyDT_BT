@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bien on Profile</title>
+    <link>http://localhost:1313/tags/bien/</link>
+    <description>Recent content in Bien on Profile</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bien/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biến và kiểu dữ liệu trong JavaScript</title>
+      <link>http://localhost:1313/posts/blog5/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/blog5/</guid>
+      <description>&lt;h2 id=&#34;khai-báo-biến&#34;&gt;Khai báo biến&lt;/h2&gt;&#xA;&lt;p&gt;JavaScript có 3 cách khai báo biến:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;var&lt;/li&gt;&#xA;&lt;li&gt;let&lt;/li&gt;&#xA;&lt;li&gt;const&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;kiểu-dữ-liệu&#34;&gt;Kiểu dữ liệu&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Number&lt;/li&gt;&#xA;&lt;li&gt;String&lt;/li&gt;&#xA;&lt;li&gt;Boolean&lt;/li&gt;&#xA;&lt;li&gt;Object&lt;/li&gt;&#xA;&lt;li&gt;Array&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;ví-dụ&#34;&gt;Ví dụ&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bao&amp;#34;&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

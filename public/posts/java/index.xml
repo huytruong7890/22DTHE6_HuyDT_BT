@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Profile</title>
+    <link>http://localhost:1313/posts/java/</link>
+    <description>Recent content in Java on Profile</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giới thiệu ngôn ngữ lập trình Java</title>
+      <link>http://localhost:1313/posts/java/gioi-thieu-java/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java/gioi-thieu-java/</guid>
+      <description>&lt;h2 id=&#34;giới-thiệu&#34;&gt;Giới thiệu&lt;/h2&gt;&#xA;&lt;p&gt;Java là một ngôn ngữ lập trình hướng đối tượng được phát triển bởi Sun Microsystems vào năm 1995. Hiện nay, Java được sử dụng rộng rãi trong phát triển phần mềm, web và ứng dụng di động, đặc biệt là các ứng dụng Android.&lt;/p&gt;&#xA;&lt;p&gt;Java nổi tiếng với phương châm &lt;strong&gt;&amp;ldquo;Write Once, Run Anywhere&amp;rdquo; (WORA)&lt;/strong&gt; - Viết một lần, chạy mọi nơi. Điều này có nghĩa là code Java sau khi được biên dịch có thể chạy trên bất kỳ nền tảng nào có cài đặt Java Virtual Machine (JVM).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

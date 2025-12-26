@@ -1,0 +1,19 @@
+baseURL = 'https://example.org/'
+languageCode = 'vi-vn'
+title = 'Profile'
+theme = 'mytheme'
+
+[[menu.main]]
+  name = "Trang chủ"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Về tôi"
+  url = "/#about"
+  weight = 2
+
+[[menu.main]]
+  name = "Blog"
+  url = "/posts/"
+  weight = 3
